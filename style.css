@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 12vw/1 'Baloo Bhai', cursive;
+    letter-spacing: .03em;
+    
+    min-height: 100vh;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- Happy Birthday ----- */
+.hb,
+.name {
+    display: flex;
+}
+
+.hb {
+    margin-bottom: .5em;
+    animation: 
+}
+
+.hb .letter {
+    opacity: 0;
+}
+
+.y:nth-child(5) {
+    margin-right: .3em;
+}
+
+/* --- Letters --- */
+.hb .h:nth-child(1) {
+    color: #FF8B98;
+    animation: fade .5s forwards .5s;
+}
+.hb .a:nth-child(2) {
+    color: #F7DF3F;
+    animation: fade .5s forwards .55s;
+}
+.hb .p:nth-child(3) {
+    color: #70B7F9;
+    animation: fade .5s forwards .6s;
+}
+.hb .p:nth-child(4) {
+    color: #70B7F9;
+    animation: fade .5s forwards .65s;
+}
+.hb .y:nth-child(5) {
+    color: #86E3F0;
+    animation: fade .5s forwards .7s;
+}
+.hb .b {
+    color: #6F8591;
+    animation: fade .5s forwards .75s;
+}
+.hb .i {
+    color: #3FB8AF;
+    animation: fade .5s forwards .8s;
+}
+.hb .r {
+    color: #7FC7AF;
+    animation: fade .5s forwards .85s;
+}
+.hb .t {
+    color: #426DA9;
+    animation: fade .5s forwards .9s;
+}
+.hb .h:nth-child(10) {
+    color: #FF8B98;
+    animation: fade .5s forwards .95s;
+}
+.hb .d {
+    color: #05C3DE;
+    animation: fade .5s forwards 1s;
+}
+.hb .a:nth-child(12) {
+    color: #F7DF3F;
+    animation: fade .5s forwards 1.05s;
+}
+.hb .y:nth-child(13) {
+    color: #86E3F0;
+    animation: fade .5s forwards 1.1s;
+}
+
+/* --- Key Frames --- */
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shadow {
+    to {
+        text-shadow: 5px 5px 100px;
+    }
+}
+
+
+/* ----- Name ----- */
+.name {
+    color: #70B7F9;
+}
+
+.name .letter {
+    animation-fill-mode: backwards;
+}
+
+/* --- Letters --- */
+.name .s {
+    animation: move .8s ease-in backwards 1.6s;
+}
+.name .a {
+    animation: move .8s ease-in backwards 1.8s;
+}
+.name .i {
+    animation: move .8s ease-in backwards 2s;
+}
+.name .f {
+    animation: move .8s ease-in backwards 2.2s,
+               bend .3s 3s;
+    transform-origin: 50% 80%;
+}
+
+
+/* --- Key Frames --- */
+@keyframes move {
+    from {
+        transform: translateX(-250px);
+        opacity: 0;
+    }
+}
+
+@keyframes bend {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+
+/* ----- Media Queries ----- */
+@media (min-width: 800px) {
+    body {
+        font-size: 6rem;
+    }
+}
